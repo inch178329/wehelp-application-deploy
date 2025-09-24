@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全域邊界盒模型設定 */
+*, *:before,*:after{
+box-sizing: border-box;
+}
+
+/* 全域設定字型，用逗號and連接起來 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p,
+a,
+input,
+label,
+textarea,
+span,
+ul,
+ol,
+li {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --bg:#2f323f;
+  --card: #fff;
+  --ink:#111;
+  --muted: #666;
+  --brand: #2b59c3;
+  --accent: #e6f0ff;
+  --border: #e9e9ef;
+  --radius: 12px;
+  --space: 16px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #1e2a38;
+  color: var(--card);
+  font: 16px/1.7 system-ui, -apple-system, "Noto Sans TC", "Open Sans",
+    sans-serif;
+}
+
+a {
+  color: rgb(164, 116, 84);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.btn:hover{
+  color: #111;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: auto;
+  padding: 28px 18px 64px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 18px;
+}
+
+.nav a {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+header.card,
+section.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.card{
+        border-radius: var(--radius) !important;
+}
+
+h1 {
+  margin: 0.2em 0 6px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.block + .block {
+  margin-top: 14px;
+}
+
+.project {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+footer {
+  color: var(--muted);
+  text-align: center;
+  margin-top: 22px;
+}
+
+.container-narrow {
+  max-width: 980px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgb(164, 116, 84);
+  color: #fff;
+}
+
+.btn:hover {
+  background: rgb(238, 216, 183);
+}
+
+.hero {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+span{
+border-bottom: 2px solid #c49f3b;
+font-weight: bold;
+}
+
+@media (max-width: 860px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>第七屆WeHelp訓練營報名申請 -- 生涯規劃</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+        <div class="container container-narrow">
+          <a class="navbar-brand fw-semibold" href="index.html">Kaitlyn Wu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto gap-1">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">個人簡歷</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於我</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="plan.html"
+                  >生涯規劃</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stories.html">事件分享</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container container-narrow">
+        <div class="card p-3 mb-3">
+          <h1 class="h4 mb-3">生涯規劃</h1>
+          <p class="small-muted mb-0">學習計畫與營期/營後目標。</p>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <h2 class="h6 mb-3 fw-bold">營期間學習計畫</h2>
+          <p class="mb-3">
+            以穩定的節奏推進進度：白天專注學習與實作，晚上以紀錄與反思收尾；
+            透過公開紀錄建立紀律，也讓自己持續得到回饋並調整方向。
+          </p>
+
+          <ul class="mb-0">
+            <li class="mb-2">
+              一～五：每日
+              <span>8–10 小時</span>（上課、實作、作業/檔案作業、記錄與回顧）
+            </li>
+            <li class="mb-2">
+              六：複盤 &amp; 周回顧，將整周的學習重點發佈到 <em>Threads</em>
+            </li>
+            <li>日：休息日/補足前幾天落下的進度</li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <h2 class="h6 mb-3 fw-bold">營期間學習目標</h2>
+          <p class="mb-3">
+            以後端為核心，從資料庫與 API
+            開發為起始點，逐步建立容器化與雲端部署的基本功；
+            同時在專題中培養協作能力與發 PR 的好習慣。
+          </p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="goal1" />
+            <label class="form-check-label" for="goal1">
+              個人專題使用 Node.js & MongoDB
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="goal2" />
+            <label class="form-check-label" for="goal2">
+              學會 Docker/K8s 容器技術（基礎實作）
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="goal3" />
+            <label class="form-check-label" for="goal3">
+            習得 AWS 相關部署技能（EC2 / S3 / RDS 入門）
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="goal4" />
+            <label class="form-check-label" for="goal4">
+              在專題中養成發 PR 的習慣
+            </label>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <h2 class="h6 mb-3 fw-bold">營期後學習目標</h2>
+
+          <p class="mb-3">
+        營期結束後，將專注在系統化整理與證照認證，補足型別與雲端技能，
+        以便在求職階段展現可維護、可上線的作品與穩定的工程素養。
+      </p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="after1" />
+            <label class="form-check-label" for="after1">
+              建立技術部落格，不定期發布文章
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="after2" />
+            <label class="form-check-label" for="after2">
+              學習 PostgreSQL/Firebase
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="after3" />
+            <label class="form-check-label" for="after3">
+              掌握 TypeScript 基礎並重構一個既有專案
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="after4" />
+            <label class="form-check-label" for="after4">
+              掌握 CI/CD 部屬流程基礎並完成一次自動部署
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="after5" />
+            <label class="form-check-label" for="after5"> 挑戰 AWS 證照（擇一入門證） </label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="about.html">← 上一頁：關於我</a>
+          <a class="btn" href="stories.html">下一頁：事件分享 →</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Kaitlyn Wu</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>
